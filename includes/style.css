@@ -1,0 +1,113 @@
+/* إعدادات الصفحة العامة */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+
+body {
+    background-color: #0b0c10; /* لون داكن للألعاب */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+/* حاوية البانر الرئيسية المقتبسة من أبعاد الصورة */
+.banner-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, #1f2833 0%, #0b0c10 100%);
+    border: 3px solid #1f2833;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+}
+
+/* تأثير النيون الأزرق لكلمة صيانة */
+.neon-text-blue {
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: #fff;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #00d2ff, 0 0 30px #00d2ff, 0 0 40px #00d2ff;
+    margin-bottom: 5px;
+}
+
+/* تأثير النيون الأحمر لكلمة بلاي ستيشن */
+.neon-text-red {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #fff;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0055, 0 0 30px #ff0055, 0 0 40px #ff0055;
+}
+
+/* قسم نص GAMEOVER */
+.gameover-section {
+    margin: 20px 0;
+}
+
+.gameover-text {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #45f3ff;
+    letter-spacing: 3px;
+    opacity: 0.8;
+    text-shadow: 0 0 10px rgba(69, 243, 255, 0.5);
+}
+
+/* تفاصيل رقم الموبايل والواتساب بأسفل الكرت */
+.contact-info {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 15px 30px;
+    border-radius: 10px;
+    border: 1px solid rgba(69, 243, 255, 0.2);
+}
+
+.whatsapp-label, .mobile-label {
+    font-size: 1.2rem;
+    color: #66fcf1;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.phone-number {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #66fcf1;
+    text-decoration: none;
+    margin-top: 5px;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.phone-number:hover {
+    color: #fff;
+    text-shadow: 0 0 10px #66fcf1;
+}
+
+/* الدروع الجانبية الرقمية السبرانية */
+.cyber-shields {
+    position: absolute;
+    width: 100%;
+    top: 35%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    pointer-events: none;
+}
+
+.shield {
+    font-size: 3rem;
+    opacity: 0.2;
+    filter: drop-shadow(0 0 10px #00d2ff);
+}
